@@ -313,7 +313,7 @@
         <div class="row">
           <!-- Start Col -->
           <div class="col-lg-6 col-md-12">
-          <form id="contactForm">
+          <!-- <form id="contactForm">
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -351,7 +351,46 @@
                 </div>
               </div>
             </div>            
-          </form>
+          </form> -->
+          <form id="contactForm" action="https://formspree.io/your-email@example.com" method="POST">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" id="subject" class="form-control" name="msg_subject" required data-error="Please enter your subject">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" required data-error="Please enter your Email">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" placeholder="Phone Number" id="phone" class="form-control" name="number" required data-error="Please enter your Phone Number">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <textarea class="form-control" id="message"  name="message" placeholder="Write Message" rows="4" data-error="Write your message" required></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="submit-button">
+                        <button class="btn btn-common" id="submit" type="submit">Submit</button>
+                        <div id="msgSubmit" class="h3 hidden"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </form>
           </div>
           <!-- End Col -->
           <!-- Start Col -->
@@ -430,7 +469,7 @@
     <script src="js/jquery.magnific-popup.min.js"></script>     
     <script src="js/form-validator.min.js"></script>
     <!-- <script src="js/contact-form-script.js"></script>    -->
-    <script src="js/contact-form-script.js"></script>
+    <!-- <script src="js/contact-form-script.js"></script> -->
     <script src="js/main.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
